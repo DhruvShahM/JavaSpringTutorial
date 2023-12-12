@@ -9,40 +9,32 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.springboot.app</groupId>
-	<artifactId>springboot-first-app</artifactId>
+	<artifactId>springboot-war-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot-first-app</name>
-	<description>Spring boot first application</description>
+	<packaging>war</packaging>
+	<name>springboot-war-demo</name>
+	<description>Spring boot War Demo</description>
 	<properties>
 		<java.version>17</java.version>
+		<start-class>com.springboot.war.SpringbootWarDemoApplication</start-class>	
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		
-			<dependency>
+
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
 		</dependency>
-
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
-	<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
-<dependency>
-    <groupId>org.projectlombok</groupId>
-    <artifactId>lombok</artifactId>
-    <version>1.18.20</version>
-    <scope>provided</scope>
-</dependency>
-
 
 	<build>
 		<plugins>

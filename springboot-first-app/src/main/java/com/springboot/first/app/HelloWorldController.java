@@ -11,8 +11,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorldController {
 	
    //GET HTTP Method		
-	@GetMapping("/hello-world")
+	@GetMapping("/hello-worlds")
 	public String helloWorld() {
 		return "Hello World!";
 	}
+	
+	//GET HTTP Method		
+		@GetMapping("/hello-world-app")
+		public String helloWorldApp() {
+			return "Hello World app!";
+		}
 }
